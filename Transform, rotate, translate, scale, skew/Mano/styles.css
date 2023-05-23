@@ -1,0 +1,95 @@
+body {
+    background-color: yellow;
+}
+
+.akiniu-galerija {
+    text-align: center;
+}
+
+/*
+.wrapper {
+    width: 300px;
+    height: 300px;
+    border: 5px dotted green;
+    margin: 0 auto;
+}
+.inner {
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+    transform: translate(50px, 50px);*/
+    /*transform: translateX(100px);
+    transform: translateY(200px);
+    transform: scale(2, 2);
+    transform: scale(1.5)
+    transform: scaleX(0.5);
+    transform: scaleY(0.5);
+    transform: rotate(-5deg);
+    transform: rotate(5grad);
+    transform: rotate(1rad);
+    transform: rotate(0.3turn);
+    transform: skew(20deg, 20deg);
+    transform: skewX(20deg);
+    transform: rotate(40deg);
+    transform-origin: center, bottom;
+    transform: rotate(20deg);
+    transform: translate(20px, 20px);
+    transform: scale(1.5);
+    transform: rotate(20deg) translate(20px,20px) scale(1.5);
+}
+.inline {
+    display: inline-block;
+    transform: rotate(20deg);
+    transform-origin: 5% 50%;
+}
+*/
+.akiniai {
+    display: inline-block;
+    background-color: blue;
+    padding: 10px;
+    box-shadow: 4px 4px 8px -4px red;
+
+}
+.akiniai-saules {
+    font-family: "Marker Felt", sans-serif;
+    font-size: 12px;
+    margin-top: 6px;
+    color: red;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.akiniu-topikas {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: aqua;
+}
+.akiniai:nth-last-of-type(even) {
+    transform: rotate(8deg);
+    
+}
+.akiniai:nth-last-of-type(odd) {
+    transform: rotate(-9deg);
+}
+
+.akiniai:nth-last-of-type(even)::before {
+content: '';
+display: block;
+background-color: green;
+width: 100px;
+height: 25px;
+transform: rotate(-25deg) translate(-30px, -25px);
+
+}
+.akiniai:nth-last-of-type(odd)::before {
+    content: '';
+display: block;
+background-color: green;
+width: 100px;
+height: 25px;
+transform: translate(140px, -5px) rotate(25deg);
+}
+
+.akiniai:hover {
+    transform: scale(1.5);
+}
